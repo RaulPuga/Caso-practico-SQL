@@ -12,7 +12,7 @@ El trabajo se dividirá de la siguiente forma:
 - Explorar la tabla “menu_items” para conocer los productos del menú.
 - Explorar la tabla “order_details” para conocer los datos que han sido recolectados.
 - Usar ambas tablas para conocer la reacción de los clientes respecto al menú.
-- 5 puntos clave que puedan ser de utilidad para los dueños del restaurante en el lanzamiento de su nuevo menú. Creando consultas
+- 10 puntos clave que puedan ser de utilidad para los dueños del restaurante en el lanzamiento de su nuevo menú. Creando consultas
 - Conclusión
 - Referencias
 
@@ -142,7 +142,16 @@ JOIN order_details L ON P.menu_item_id = L.item_id
 <img width="1093" alt="Captura de Pantalla 2024-07-25 a la(s) 20 58 19" src="https://github.com/user-attachments/assets/3feeb888-6f24-468b-b1ef-4e59ef4b4199">
 
 
-## 5 puntos clave que puedan ser de utilidad para los dueños del restaurante en el lanzamiento de su nuevo menú. Creando consultas
+## 10 puntos clave que puedan ser de utilidad para los dueños del restaurante en el lanzamiento de su nuevo menú. Creando consultas
+
+### Número de platillos por categoría
+````
+select count (distinct item_name) as número_artículos_menú, category
+from menu_items
+group by category
+````
+<img width="363" alt="Captura de Pantalla 2024-07-26 a la(s) 8 39 52" src="https://github.com/user-attachments/assets/65b357b5-7df9-4b72-a3b2-d37ab65282ab">
+
 
 1. categoria de comida que vende más
 ````
@@ -284,7 +293,12 @@ limit 5
 
 
 ## Conclusión:
-### Utilizar excel con un enfoque de análisis de datos es una gran idea ya que esta herramienta ofrece una gran variedad de funciones que facilitan las tareas, como lo vimos en este análisis. 
+La empresa "Sabores del Mundo" ofrece 32 platillos en su menú, divididos en 4 categorías (asiatica, italiana, americana y mexicana). 
+El precio máximo de un platillo es de $19.95, el mínimo es de de $5 y el promedio de $13.92. 
+El resgistro de datos contempla de enero a marzo del año 2023, siendo el de mayor volumen de ventas e ingresos el mes de enero.
+El horario con mayores volumenes de ventas e ingresos en la cena (de 18:01 a cierre), siendo la comida asiatica la de mayor volumen auque esto se puede deber a que esa categoría es la que más número de platillos diferentes ofrecen (8).
+Los 5 productos con mayores ventas son: Hamburger, Edamame, Korean Beef, cheeseburger y French Fries, pero cuando evaluamos el ingreso total de las ventas el ranking cambia, lo mismo ocurre con el top 5 de los productos menos vendidos que son: Chicken Tacos, Potstikers, Cheese Lasagna, Steak Tacos y Cheese Quesadillas, una posible explicación de este fenómeno sería que el precio de los artículos influye en el nivel de ventas.
+Se recomienda seguir haciendo el resgistro de ventas comprobar si esta míni tendencia se sigue repitiendo, tomar acción y empezar campañas de publicidad con los porductos más vendidos y con los menos vendidos valorar si es necesario hacer algún cambio, por otro lado, el incorporar información de los costos de los productos, así como los fijos y variables permitirá extender el análisis y encontrar por ejemplo: el producto estrella del negocio, el costo marginal, el punto de equilibrio entre otra información relevante.
 
 ## Referencias:
 - DeVito. (2022, 1 septiembre). 01 - Descarga e Instalación de PosgreSQL | Curso de Base de Datos PostgresSQL [Vídeo]. YouTube. https://www.youtube.com/watch?v=gEJcMrk3E-Q
