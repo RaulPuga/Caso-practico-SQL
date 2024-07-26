@@ -155,19 +155,20 @@ group by category
 
 1. categoria de comida que vende más
 ````
-SELECT count(distinct (order_id)) as numero_pedidos,
+SELECT count(order_details_id) as numero_pedidos,
 CASE
-    WHEN category = 'Asian' THEN 'Comida_asiatica'
-	WHEN category = 'Italian' THEN 'Comida_Italiana'
-	WHEN category = 'Mexican' THEN 'Comida_Mexicana'
+    WHEN category ilike 'Asian' THEN 'Comida_asiatica'
+	WHEN category ilike 'Italian' THEN 'Comida_Italiana'
+	WHEN category ilike 'Mexican' THEN 'Comida_Mexicana'
     ELSE 'Comida_Americana'	
 END AS Tipo_de_comidas
 FROM order_details P
 JOIN menu_items L ON P.item_id = L.menu_item_id
-group by category 
+group by tipo_de_comidas 
 order by numero_pedidos desc;
 ````
-<img width="299" alt="Captura de Pantalla 2024-07-25 a la(s) 21 04 24" src="https://github.com/user-attachments/assets/9664b590-7f76-4881-98bb-23e16c473740">
+<img width="306" alt="Captura de Pantalla 2024-07-26 a la(s) 10 42 16" src="https://github.com/user-attachments/assets/48224ead-b811-4fd6-a854-7ef6183424cf">
+
 
 
 2. Ingresos por categoría de comidas
