@@ -21,7 +21,7 @@ El trabajo se dividirá de la siguiente forma:
 ### Identificar cuáles son los productos del menú que han tenido más éxito y cuales son los que menos han gustado a los clientes.
 
 
-## Base de datos:
+## Bases de datos a utilizar:
 
 
 
