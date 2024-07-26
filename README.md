@@ -293,12 +293,12 @@ limit 5
 
 
 ## Conclusión:
-La empresa "Sabores del Mundo" ofrece 32 platillos en su menú, divididos en 4 categorías (asiatica, italiana, americana y mexicana). 
+La empresa "Sabores del Mundo" ofrece 32 platillos en su menú, divididos en 4 categorías (asiática, italiana, americana y mexicana). 
 El precio máximo de un platillo es de $19.95, el mínimo es de de $5 y el promedio de $13.92. 
-El resgistro de datos contempla de enero a marzo del año 2023, siendo el de mayor volumen de ventas e ingresos el mes de enero.
-El horario con mayores volumenes de ventas e ingresos en la cena (de 18:01 a cierre), siendo la comida asiatica la de mayor volumen auque esto se puede deber a que esa categoría es la que más número de platillos diferentes ofrecen (8).
+El resgistro de datos contempla de enero a marzo del año 2023, siendo el de mayor volúmen de ventas e ingresos el mes de enero.
+El horario con mayores volúmenes de ventas e ingresos en la cena (de 18:01 a cierre), siendo la comida asiatica la de mayor volúmen auque esto se puede deber a que esa categoría una de las que más número de platillos diferentes ofrecen (8).
 Los 5 productos con mayores ventas son: Hamburger, Edamame, Korean Beef, cheeseburger y French Fries, pero cuando evaluamos el ingreso total de las ventas el ranking cambia, lo mismo ocurre con el top 5 de los productos menos vendidos que son: Chicken Tacos, Potstikers, Cheese Lasagna, Steak Tacos y Cheese Quesadillas, una posible explicación de este fenómeno sería que el precio de los artículos influye en el nivel de ventas.
-Se recomienda seguir haciendo el resgistro de ventas comprobar si esta míni tendencia se sigue repitiendo, tomar acción y empezar campañas de publicidad con los porductos más vendidos y con los menos vendidos valorar si es necesario hacer algún cambio, por otro lado, el incorporar información de los costos de los productos, así como los fijos y variables permitirá extender el análisis y encontrar por ejemplo: el producto estrella del negocio, el costo marginal, el punto de equilibrio entre otra información relevante.
+Se recomienda seguir haciendo el resgistro de ventas para comprobar si esta míni tendencia se sigue repitiendo, tomar acción y empezar campañas de publicidad con los porductos más vendidos y con los menos vendidos valorar si es necesario hacer algún cambio, por otro lado, el incorporar información de los costos de los productos, así como los fijos y variables permitirá extender el análisis y encontrar por ejemplo: el producto estrella del negocio, el costo marginal, el punto de equilibrio entre otra información relevante.
 
 ## Referencias:
 - DeVito. (2022, 1 septiembre). 01 - Descarga e Instalación de PosgreSQL | Curso de Base de Datos PostgresSQL [Vídeo]. YouTube. https://www.youtube.com/watch?v=gEJcMrk3E-Q
