@@ -6,6 +6,9 @@ select distinct(item_id) from order_details;
 select count (distinct menu_item_id) as número_artículos_menú
 from menu_items;
 
+select distinct item_name as número_artículos_menú
+from menu_items
+
 -- ¿Cuál es el artículo menos caro y el más caro en el menú? -- 
 
 SELECT item_name, price as precio_más_caro
@@ -23,6 +26,7 @@ select count (category) as nunero_platos_americanos, category
 from menu_items
 where category = 'American'
 group by category;
+
 
 -- Cuál es el precio promedio de los platos -- 
 	
@@ -64,21 +68,22 @@ FROM menu_items P
 JOIN order_details L ON P.menu_item_id = L.item_id;
 
 -- 1 categoria de comida que vende más --
-SELECT count(distinct (P.order_id)), category
+SELECT count (order_details_id) as número_de_ventas, category
 FROM order_details P
 JOIN menu_items L ON P.item_id = L.menu_item_id
 group by category 
-order by count desc
-SELECT count(distinct (order_id)) as numero_pedidos,
+order by número_de_ventas desc
+	
+SELECT count(order_details_id) as numero_pedidos,
 CASE
-    WHEN category = 'Asian' THEN 'Comida_asiatica'
-	WHEN category = 'Italian' THEN 'Comida_Italiana'
-	WHEN category = 'Mexican' THEN 'Comida_Mexicana'
+    WHEN category ilike 'Asian' THEN 'Comida_asiatica'
+	WHEN category ilike 'Italian' THEN 'Comida_Italiana'
+	WHEN category ilike 'Mexican' THEN 'Comida_Mexicana'
     ELSE 'Comida_Americana'	
 END AS Tipo_de_comidas
 FROM order_details P
 JOIN menu_items L ON P.item_id = L.menu_item_id
-group by category 
+group by tipo_de_comidas 
 order by numero_pedidos desc;
 
 -- Ingresos por comidas -- 
@@ -169,3 +174,4 @@ JOIN order_details L ON P.menu_item_id = L.item_id
 group by P.item_name, price
 order by ingreso_total asc
 limit 5;
+
